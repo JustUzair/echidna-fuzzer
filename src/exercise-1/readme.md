@@ -1,7 +1,9 @@
 # Echidna Solution
 
 ```javascript
-solc-select use 0.8.20
+$ solc-select use 0.8.20
+Switched global version to 0.8.20
+
 $ echidna src/exercise-1/solution.sol
 [2024-08-19 16:28:21.29] Compiling src/exercise-1/solution.sol... Done! (0.3919586s)
 Multiple contracts found, only analyzing the first
