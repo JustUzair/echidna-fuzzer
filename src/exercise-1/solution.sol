@@ -1,5 +1,5 @@
-// SPDX-License-Identifier: SEE LICENSE IN LICENSE
-pragma solidity 0.7.0;
+// SPDX-License-Identifier: MIT
+pragma solidity ^0.8.20;
 
 import "./token.sol";
 
@@ -9,9 +9,8 @@ contract TestToken is Token {
     constructor() {
         balances[echidna_caller] = 10000;
     }
-    // add the property
 
     function echidna_test_balance() public view returns (bool) {
-        require(balances[msg.sender] <= 10000);
+        return balances[echidna_caller] <= 10000;
     }
 }
